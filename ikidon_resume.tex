@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in LateX
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{\LARGE João Antonio de Lima Gonçalves} \\ \vspace{4pt}
+  \small Recife, Pernambuco, Brasil \\ \vspace{4pt}
+  \small \href{mailto:ikidon.cc@gmail.com}{ikidon.cc@gmail.com} \textbar{} \href{https://www.linkedin.com/in/ikidoncc/}{linkedin.com/in/ikidoncc} \textbar{} \href{https://github.com/ikidoncc}{github.com/ikidoncc}
+\end{center}
+
+%-----------EXPERIENCE-----------------
+\section{Experiência Profissional}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Vision Tecnologia}{Remoto, Brasil}
+      {Desenvolvedor de Software}{Out 2023 -- Out 2024}
+      \resumeItemListStart
+        \resumeItemPlain
+          {Participei de projetos de ponta a ponta, desde o planejamento até a implementação, testes e entrega das soluções.}
+        \resumeItemPlain
+          {Implementei novas funcionalidades utilizando tecnologias como GraphQL, Axiom, PostgreSQL, Docker, entre outras.}
+        \resumeItemPlain
+          {Realizei a documentação dos projetos e implementei automações para testes de integração, testes unitários e testes end-to-end (E2E).}
+        \resumeItemPlain
+          {Atuei na manutenção e evolução das aplicações, identificando e corrigindo problemas e contribuindo para a melhoria contínua das soluções.}
+        \resumeItemPlain
+          {Colaborei com a equipe de desenvolvimento, participando de reuniões, revisões de código e compartilhando conhecimentos para promover boas práticas de desenvolvimento.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 -- Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS--------------------
+\section{Habilidades Técnicas}
+  \resumeSubHeadingListStart
+    \resumeItem{Linguagens de Programação}{JavaScript, TypeScript, SQL}
+    \resumeItem{Tecnologias}{React, Node.js, GraphQL, PostgreSQL, Axiom, Docker}
+    \resumeItem{Ferramentas}{Git, Docker, GitHub, GitLab, Jira, Trello, Postman}
+    \resumeItem{Metodologias}{Agile, Scrum, Test-Driven Development (TDD)}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Formação Acadêmica}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Instituto Federal do Sertão Pernambuco}{Ouricuri, PE}
+      {Técnico em Informática}{Mar 2019 -- Dez 2022}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source Python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{GitHub Visualization}
+      {Data visualization of Git log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+%\section{Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
