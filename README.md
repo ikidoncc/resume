@@ -1,26 +1,35 @@
-A single-page, one-column resume for software developers. It uses the base latex templates and fonts to provide ease of use and installation when trying to update the resume. The different sections are clearly documented and custom commands are used to provide consistent formatting. The three main sections in the resume are education, experience, and projects.
+# Resume
 
-### Motivation
+LaTeX source for my resume. Single-column, ATS-friendly, one page.
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
+Template derived from [sb2nov/resume](https://github.com/sb2nov/resume) and [harlleybastos/resume](https://github.com/harlleybastos/resume) (MIT).
 
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
+## Preview
 
-### Quick start
+[![Resume preview](ikidon_resume.png)](ikidon_resume.pdf)
 
-Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/software-engineer-resume/gqxmqsvsbdjf) template.
+_Latest build: [resume.pdf](ikidon_resume.pdf). Preview regenerated on each build._
 
-### Build using Docker
+## Build
+
+### Locally (primary)
+
+`resume.pdf` is compiled locally and committed, so it's always current here. Rebuild with:
 
 ```sh
-docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+./build.sh
 ```
 
-### Preview
+It uses `tectonic` if available (self-contained), falling back to `latexmk` or `pdflatex` from any TeX Live / MiKTeX install.
 
-![Resume Screenshot](/resume_preview.png)
+### Overleaf
 
-### License
+Upload `resume.tex` to a new [Overleaf](https://www.overleaf.com) project (or import this repo) and compile with pdfLaTeX.
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+### CI (optional)
+
+A GitHub Actions workflow ([.github/workflows/build.yml](.github/workflows/build.yml)) compiles the PDF with [xu-cheng/latex-action](https://github.com/xu-cheng/latex-action) on push. Local build is the source of truth; CI is just a convenience.
+
+## License
+
+[MIT](LICENSE). Template derived from [sb2nov/resume](https://github.com/sb2nov/resume), also MIT — original attribution preserved.
